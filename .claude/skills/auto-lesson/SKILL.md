@@ -35,10 +35,21 @@ You are an expert orchestrator for lesson workflows.
     *   **Note:** The `/lesson-email` skill runs in a forked context, so reading the transcript there won't clutter your current history.
     *   The `/lesson-email` skill will output the email text. Capture it and save it to a file (e.g., `tmp/{{$1|basename}}_email.txt`).
 
-3.  **Step 3: Delivery**:
-    *   Open the generated email in Gmail:
+3.  **Step 3: Update Student Profile**:
+    *   Find the student's profile Markdown file (`students/{{to|default:"Student"}}.md`).
+    *   Read the generated email text and extract the key lesson points, strengths, and areas for improvement.
+    *   Prepend a new entry to the `## 📅 課程記錄` section in the student's Markdown file. Ensure the entry matches the existing format (Date, Lesson Number, Focus, Progress, Suggestions, Homework).
+
+4.  **Step 4: Delivery**:
+    *   Extract the date from the transcript file (it should be on the first line like "DATE: 4/11"). Format it as MMDD (e.g., 0411).
+    *   Open the generated email in Gmail using the extracted date:
         ```bash
-        python3 .claude/skills/send-email/scripts/send_email.py "tmp/{{$1|basename}}_email.txt" --subject "AT Lesson with Peggy"
+        # Get the date string from the first line (e.g. "DATE: 4/11" -> "0411")
+        LESSON_DATE=$(head -n 1 "tmp/{{$1|basename}}.txt" | grep -oE '[0-9]+/[0-9]+' | awk -F'/' '{printf "%02d%02d", $1, $2}')
+        # Fallback to current date if not found
+        if [ -z "$LESSON_DATE" ]; then LESSON_DATE=$(date +%m%d); fi
+        
+        python3 .claude/skills/send-email/scripts/send_email.py "tmp/{{$1|basename}}_email.txt" --subject "$LESSON_DATE AT Lesson with Peggy"
         ```
 
-4.  **Report**: Confirm completion.
+5.  **Report**: Confirm completion.

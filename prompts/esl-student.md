@@ -15,14 +15,36 @@ Use the `Read` tool to check if `students/<student_name>.md` already exists.
 - If it doesn't exist, proceed to the interview.
 
 ### 2. Interview the teacher
-Ask the following questions one at a time (or grouped logically). Accept answers in English or Chinese:
+Ask the following questions one at a time (or grouped logically). Accept answers in English or Chinese. When using AskUserQuestion, use the following standardized options (remember that AskUserQuestion only allows up to 4 options, and the last option should usually be 'Other' to allow free text input):
 
 1. **What is the student's occupation?** (職業)
-2. **What is their current level?** (e.g., A1, A2, A2-B1, B1, B2, C1)
-3. **What is their learning goal?** (學習目標 — e.g., daily conversation, bilingual teaching, business English, travel, exam prep)
-4. **What should the class focus on?** (上課重點 — e.g., speaking & listening, reading & writing, grammar, pronunciation)
+   - Tech / IT
+   - Education
+   - Student
+   - Other
+2. **What is their current level?** (Note: AskUserQuestion max 4 options, 'Other' is auto-added)
+   - A1-A2 (Beginner)
+   - A2-B1 (Pre-Intermediate)
+   - B1-B2 (Intermediate)
+   - C1+ (Advanced)
+3. **What is their learning goal?** (學習目標)
+   - Daily Conversation
+   - Business English
+   - Bilingual Teaching
+   - Other
+4. **What should the class focus on?** (上課重點)
+   - Speaking & Listening
+   - Reading & Writing
+   - Grammar
+   - Other
 5. **Any personal background that's useful for lesson planning?** (個人背景 — e.g., job details, hobbies, lifestyle, schedule. This helps pick relevant topics.)
+   - Add Details (Provide free text)
+   - Skip
 6. **Any known weaknesses?** (薄弱項 — e.g., tense switching, prepositions, phrasal verbs, pronunciation)
+   - Grammar Issues (tenses, prepositions, etc.)
+   - Vocabulary / Word Choice
+   - Pronunciation
+   - Other
 
 ### 3. Generate the profile
 Create the profile using this exact format (matching `students/Hsuan.md`):

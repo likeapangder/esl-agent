@@ -1,6 +1,6 @@
 ---
 name: esl-prep
-description: Full ESL lesson prep — gathers student info, generates a lesson plan (/esl-plan), then creates a Canva presentation (/esl-canva)
+description: Full ESL lesson prep — gathers student info, generates a lesson plan (/esl-plan), and outputs ready-to-copy slide content
 context: fork
 agent: general-purpose
 ---

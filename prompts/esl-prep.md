@@ -25,12 +25,12 @@ The user's command is visible in the conversation. It follows the format:
 - **Teaching Materials:** If the user provides a path to a PDF (Elli worksheet), use the `Read` tool to extract the content (especially page 1 for the vocabulary preview). If they provide screenshots, analyze them. If they just provide a topic, note that no Elli worksheet is available.
 
 ### Step 2: Generate Lesson Plan
-Invoke `/esl-plan <student_name> <topic_or_materials_path>` to generate the full lesson plan with QA-checked Canva slide content.
+Invoke `/esl-plan <student_name> <topic_or_materials_path>` to generate the full lesson plan with QA-checked Canva slide content. Output the exact slide content so the teacher can easily copy-paste it.
 
-### Step 3: Create Canva Presentation
-After the lesson plan is finalized, invoke `/esl-canva <student_name>` to create the Canva presentation and file it in the student's folder.
+### Step 3: Save the Lesson Plan
+Automatically use the `Write` tool to save the complete generated lesson plan and slide content as a Markdown file in the `/Users/linhsinpei/esl-agent/plans` directory. Name the file `[StudentName]_[Topic].md`.
 
 ## Output
-The combined output from both sub-skills:
-1. The QA-approved lesson plan (from `/esl-plan`)
-2. The Canva creation confirmation (from `/esl-canva`)
+The combined output from the sub-skill:
+1. The QA-approved lesson plan (from `/esl-plan`) with copy-paste ready slide text
+2. Confirmation that the plan has been saved to the `plans` directory

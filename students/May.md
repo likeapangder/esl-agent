@@ -20,12 +20,18 @@
 
 ## 📅 課程記錄
 
+### 2026-04-10（第 11 節）
+* **本節重點:** 日常對話與時態練習 / 清明節文化探討 / 博物館與展覽預習
+* **掌握情況:**
+  * **好:** 努力用英文描述滿檔的行程 (schedule was very full)、tomb sweeping day 相關單字 (memorial tower, offerings, paper money)、展覽類型 (art/historical/science exhibition)、exhibition 和 zone 的發音進步
+  * **練習中:** 過去式應用 (I waited so long, I was in a hurry)、exhibition (展覽) vs exhibit (展出/展品) 的差異、introduction/description vs instruction
+* **下節建議:** 延續博物館主題，加強旅行實用會話與發音練習
+
 ### 2026-03-18（第 10 節）
 * **本節重點:** 生活分享與名詞複數 / 旅遊計畫與國家區分 / 表達意願與電影對話 / Taylor Swift 討論
 * **掌握情況:**
   * **好:** a pair of shoes/jeans/glasses/gloves、Northern Lights = Aurora、Switzerland vs Sweden、zoom in/out、feel like seeing / in the mood for / up for / I'd prefer / I'd rather
   * **練習中:** 委婉表達意願的多種說法
-* **下節建議:** 繼續電影/娛樂主題或轉入新主題
 
 ### 2026-03-11（第 9 節）
 * **本節重點:** 近況更新與旅遊計畫 / -ed vs -ing 形容詞 / 電影對話聽力練習

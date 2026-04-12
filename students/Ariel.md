@@ -20,6 +20,14 @@
 
 ## 📅 課程記錄
 
+### 2026-04-09（第 13 節）
+* **本節重點:** 週末分享與清明連假 / 寵物展與貓咪日常 / 職業倦怠文章閱讀
+* **掌握情況:**
+  * **好:** Tomb Sweeping vs. Pray to ancestors、Kaohsiung Arena (line up to pay)、Picky、Cupboard vs. Cabinet
+  * **練習中:** Exhaustion / emotional exhaustion、Fight or flight response、prolonged / constant / frontal lobe / resentfulness / doubt
+* **下節建議:** 繼續討論職業倦怠相關主題，鼓勵嘗試用英文表達自己的想法
+* **作業:** A Memorable Dream (一個難忘的夢)
+
 ### 2026-03-18（第 12 節）
 * **本節重點:** 近況分享 / -ed vs -ing 形容詞 / 恐懼症文章精讀
 * **掌握情況:**

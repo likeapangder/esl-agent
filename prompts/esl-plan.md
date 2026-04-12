@@ -46,48 +46,27 @@ If the lesson type is unclear from the inputs, default to **Type A**.
 ### 1. Standard Canva PPT Framework Integration
 The teacher uses a standard slide framework. The number and style of slides adapt to the student's level and the lesson type (see Step 0). Check `references/` for real PPT examples at different levels. Your lesson plan MUST generate content for the following slides:
 
-- **Slide 1: Greeting** (e.g., "Hi [Name], how are you? [Date]")
-
-- **Slide 2: Small Talk / Check-in**
-  The style and depth of the small talk section varies significantly by level:
-  - **Students below B1 (A1-A2):** Scaffolded small talk — one slide with a sentence pattern + fill-in-the-blank phrases with illustrations (e.g., "What did you do this week? This week, I + past verb + (object/place)" with options like "spent time with ___", "caught up with ___"). *Reference: `references/A2-bad-bunny.pdf` slide 2*
-  - **Students at B1:** Open-ended feelings check-in — one slide (e.g., "How are you feeling today? I feel / am ___." with Positive, Neutral, Negative categories).
-  - **Students at B2 or above:** A **multi-slide "Weekly Life Update"** section teaching natural conversational phrases:
-    - Slide 2a: **Starting Phrases** — natural ways to open ("Last week was pretty… busy/quiet/normal", "It went by quickly") with key collocations/vocabulary highlighted.
-    - Slide 2b: **Work & weekday life** — phrases for describing their work week ("I worked overtime", "It was a typical workweek").
-    - Slide 2c: **Weekend Phrases** — phrases for weekends ("I took it easy", "I went out for a bit").
-    - Slide 2d: **Follow-up Questions** — how to continue the conversation naturally ("How about you?", "Did you do anything fun?", "Was your week busy?").
-    - *Reference: `references/B2-C1-warmup.pdf` slides 2-5*
-
-- **Slide 2+ (below B1 only): Grammar Practice Slide**
-  - A single targeted grammar question with a sentence starter (e.g., "What were you doing this afternoon? I was ……").
-  - This slide reinforces the grammar point being practiced in the lesson. Only include for students below B1.
-  - *Reference: `references/A2-bad-bunny.pdf` slide 3*
-
-- **Slide 3: Warm-up Questions**
+- **Slide 1: Warm-up Questions**
   - 3 numbered discussion questions that introduce the day's topic and get the student speaking.
-  - Below the questions: a row of 4-5 small topic-related images/icons (describe them so the teacher can find or create matching visuals in Canva).
-  - Below the images: 3 bullet-point follow-up questions that reference the images (e.g., "Which one is the most common?", "Which one do you think is rare?", "Why do people have this ___?").
-  - *Reference: [Image #1 — Warm-up questions slide]*
+  - Below the questions: a row of 4-5 small topic-related images/icons (describe them so the teacher can find or create matching visuals).
+  - Below the images: 3 bullet-point follow-up questions that reference the images.
 
-- **Slide 4: Vocabulary / Core Input**
+- **Slide 2: Vocabulary / Core Input**
   - A two-column table: **Word** | **Definition**
-  - The vocabulary MUST come from the **"B. Vocabulary Preview"** section on page 1 of the Elli worksheet. This section contains a numbered matching exercise (words on the left, definitions on the right). Extract the words and their correct matched definitions — use the Elli definitions as-is or simplify them slightly to fit the student's level.
-  - If no Elli worksheet is provided, fall back to selecting 5 key words/phrases from the lesson topic.
-  - **Words per slide by level:**
-    - **Below B1:** Max 4 words per slide.
-    - **B1 and above:** Max 5 words per slide.
-  - If there are more words than one slide allows, split across **two slides** (Slide 4a and Slide 4b).
-  - Definitions must be written in simple English appropriate to the student's level — short, clear, no jargon.
-  - *Reference: [Image #2 — Vocabulary slide], `references/A2-bad-bunny.pdf` slides 4-5, Elli PDF page 1 "B. Vocabulary Preview"*
+  - The vocabulary MUST come from the material provided (e.g., "B. Vocabulary Preview" section). Extract ALL the words provided in the material and their correct matched definitions — use the definitions as-is or simplify them slightly to fit the student's level. Do NOT limit the number of words. If the material provides 10 words, include all 10.
+  - If no material is provided, fall back to selecting key words/phrases from the lesson topic.
+
+- **Slide 3: Comprehension Questions and Answers**
+  - Provide 4-5 comprehension questions based on the article/reading.
+  - Provide the correct answers below each question.
+
+- **Slide 4: Post-discussion Questions**
+  - Provide 3-4 open-ended discussion questions that allow the student to express their opinions on the topic.
 
 - **Slide 5: Homework / Output Task**
-  - A topic title framed as a question or opinion prompt (e.g., `📚: "Notifications — Helpful or Stressful?"`).
-  - **Task:** A one-sentence instruction telling the student what to produce (e.g., "Give your opinion about notifications from phones or devices.").
-  - **Scaffolding (level-dependent):**
-    - **Students at B1 or above → Guiding Questions:** Provide 4-5 open-ended questions that help the student organize their response (e.g., "How often do you…?", "Do you usually…?", "What do you do to…?").
-    - **Students below B1 → Sentence Patterns:** Provide 4-5 sentence starters or fill-in-the-blank patterns the student can complete (e.g., "I think ___ is ___.", "When I ___, I feel ___.", "___ makes me ___ because ___.").
-  - *Reference: [Image #3 — Homework slide]*
+  - A topic title framed as a question or opinion prompt.
+  - **Task:** A one-sentence instruction telling the student what to produce.
+  - **Scaffolding (level-dependent):** Guiding questions or sentence starters.
 
 #### Type B Additional Slides (Grammar-Focused Lessons only)
 When the lesson is Type B, replace Slides 3-4 (Warm-up + Vocabulary) with these:
@@ -137,4 +116,6 @@ Before finalizing the output to the user, evaluate your own drafted lesson plan 
 *Self-Correction:* If the QA phase identifies issues (e.g., "Slide 3 questions are too abstract for A2 level"), adjust the draft immediately before presenting the final result.
 
 ## Output Format
-Present the final, QA-approved lesson plan clearly in Markdown format. Start with a brief summary of the QA Manager's approval (e.g., "✅ **QA Check Passed:** Adjusted Slide 4 vocabulary definitions to be B1 appropriate and ensured Slide 5 guiding questions practice their weak point (prepositions)."). Then output the structured plan.
+Present the final, QA-approved lesson plan clearly in Markdown format. Start with a brief summary of the QA Manager's approval (e.g., "✅ **QA Check Passed:** Adjusted Slide 4 vocabulary definitions to be B1 appropriate and ensured Slide 5 guiding questions practice their weak point (prepositions).").
+
+**CRITICAL:** Output the Canva PPT Slide Content (Slides 1-5) in a clean, copy-paste ready format. Each slide should be clearly separated (e.g., inside markdown code blocks or blockquotes) with only the exact English text that the teacher needs to paste onto the slide. Do not include extra commentary mixed in with the slide text.
