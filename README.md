@@ -5,7 +5,7 @@ A robust, local CLI-based agent powered by Claude Code for orchestrating persona
 ## 🚀 Features
 
 - **Lesson Planning:** Automatically generates QA-checked, level-appropriate lesson plans based on student profiles and Ellii worksheet PDFs.
-- **Canva Integration:** Directly generates Canva presentations from your lesson plans using MCP tools, complete with custom typography rules, and automatically files them into the student's Canva folder.
+- **Canva Integration:** *(Coming soon!)* Will directly generate Canva presentations from your lesson plans using MCP tools, complete with custom typography rules, and automatically file them into the student's Canva folder.
 - **Local Video Transcription:** Runs local `faster-whisper` transcription on your Mac to convert raw lesson video recordings into text transcripts without expensive cloud API costs.
 - **Agentic Email Drafting:** Uses a specialized sub-agent to draft highly personalized, bilingual post-class summary emails that capture nuanced linguistic corrections and student progress.
 - **Automated Profile Management:** Dynamically creates new student profiles via a short interactive interview, and automatically updates existing profiles with course records after every class.
@@ -29,9 +29,9 @@ This project relies heavily on custom Claude Code Skills to handle complex, mult
 
 ### 📝 Pre-Class: Lesson Prep
 - **`/esl-student <Name>`** - Interactive interview to create a new student profile markdown file.
-- **`/esl-prep <Name> "/path/to/worksheet.pdf"`** - The ultimate prep orchestrator. Reads the student's profile (weaknesses, goals, level), analyzes the PDF worksheet, and generates a tailored lesson plan with exact slide content.
-- **`/esl-plan <Name> "Topic"`** - Generates just the lesson plan and slide content markdown (no Canva integration).
-- **`/esl-canva <Name> plans/<Name>_Lesson.md`** - Reads a saved lesson plan markdown file and uses the Canva MCP to generate a presentation, applying strict styling rules (Century Gothic, bold headers, white background) and filing it in the student's Canva folder.
+- **`/esl-prep <Name> "/path/to/worksheet.pdf"`** - The ultimate prep orchestrator. Reads the student's profile (weaknesses, goals, level), analyzes the PDF worksheet, and generates a tailored lesson plan with exact ready-to-copy slide content.
+- **`/esl-plan <Name> "Topic"`** - Generates the lesson plan and outputs the slide content ready-to-paste.
+- **`/esl-canva`** *(Coming Soon)* - Reads a saved lesson plan markdown file and uses the Canva MCP to generate a presentation, applying strict styling rules and filing it in the student's Canva folder.
 
 ### 🎬 Post-Class: Auto Lesson Summary
 - **`/auto-lesson /path/to/recording.mp4`** - The complete post-class orchestrator.
@@ -61,7 +61,7 @@ esl-agent/
     ├── memory/                   # File-based auto memory for user preferences (e.g., feedback_email_style.md)
     └── skills/                   # Claude Code Skill definitions and sub-agents
         ├── auto-lesson/          # Post-class orchestrator
-        ├── esl-canva/            # Canva MCP presentation generator
+        ├── esl-canva/            # (Coming Soon) Canva MCP presentation generator
         ├── esl-plan/             # Lesson plan generator
         ├── esl-prep/             # Pre-class orchestrator
         ├── esl-student/          # Profile creator
