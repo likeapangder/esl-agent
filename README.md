@@ -39,8 +39,8 @@ This project relies heavily on custom Claude Code Skills to handle complex, mult
   2. Passes the transcript to an agentic email writer to draft a highly accurate bilingual summary email.
   3. Updates the student's profile (`students/*.md`) with the new lesson record and progress notes.
   4. Automatically opens the generated draft in your local Gmail interface via Chrome with the correct date in the subject line.
-- **`/lesson-summary /path/to/recording.mp4`** - Runs only the local media processor to output a raw `.txt` transcript.
-- **`/lesson-email tmp/transcript.txt`** - Runs only the email writer sub-agent on a raw transcript, referencing the `Master_EmailStyle_Guide.md` and user feedback memories for tone.
+- **`/transcribe /path/to/recording.mp4`** - Runs only the local media processor to output a raw `.txt` transcript.
+- **`/lesson-summary tmp/transcript.txt`** - Runs only the email writer sub-agent on a raw transcript, referencing the `Master_EmailStyle_Guide.md` and user feedback memories for tone.
 
 ## 📂 Project Structure
 
@@ -65,9 +65,9 @@ esl-agent/
         ├── esl-plan/             # Lesson plan generator
         ├── esl-prep/             # Pre-class orchestrator
         ├── esl-student/          # Profile creator
-        ├── lesson-email/         # Email drafting sub-agent
-        ├── lesson-summary/       # Local transcription runner
-        └── send-email/           # Gmail opening script handler
+        ├── lesson-summary/       # Email drafting sub-agent
+        ├── send-email/           # Gmail opening script handler
+        └── transcribe/           # Local transcription runner
 ```
 
 ## 🧑‍🎓 Student Profile Schema

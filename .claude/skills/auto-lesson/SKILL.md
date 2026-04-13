@@ -23,17 +23,17 @@ You are an expert orchestrator for lesson workflows.
 1.  **Step 1: Local Transcription**:
     *   Run the lesson summary script to generate a transcript:
         ```bash
-        python3 .claude/skills/lesson-summary/scripts/lesson_summary.py "{{$1}}" --model {{model|default:"base"}}
+        python3 .claude/skills/transcribe/scripts/transcribe.py "{{$1}}" --model {{model|default:"base"}}
         ```
     *   Find the path to the generated transcript file (it should be in `tmp/`).
 
 2.  **Step 2: Agentic Email Generation**:
-    *   Pass the transcript file directly to the `/lesson-email` writer agent:
+    *   Pass the transcript file directly to the `/lesson-summary` writer agent:
         ```bash
-        /lesson-email <transcript_file>
+        /lesson-summary <transcript_file>
         ```
-    *   **Note:** The `/lesson-email` skill runs in a forked context, so reading the transcript there won't clutter your current history.
-    *   The `/lesson-email` skill will output the email text. Capture it and save it to a file (e.g., `tmp/{{$1|basename}}_email.txt`).
+    *   **Note:** The `/lesson-summary` skill runs in a forked context, so reading the transcript there won't clutter your current history.
+    *   The `/lesson-summary` skill will output the email text. Capture it and save it to a file (e.g., `tmp/{{$1|basename}}_email.txt`).
 
 3.  **Step 3: Update Student Profile**:
     *   Find the student's profile Markdown file (`students/{{to|default:"Student"}}.md`).

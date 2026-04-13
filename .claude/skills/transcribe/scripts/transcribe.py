@@ -3,7 +3,7 @@
 Lesson Summary Workflow
 Converts MP4 to MP3, transcribes audio, and saves transcript to tmp directory
 
-Usage: python lesson_summary.py <video_file> [options]
+Usage: python transcribe.py <video_file> [options]
 """
 
 import sys
