@@ -1,68 +1,78 @@
 # Personalized ESL Agent
 
-A local CLI-based agent for generating personalized ESL lesson plans with diagnostic reasoning.
+A robust, local CLI-based agent powered by Claude Code for orchestrating personalized ESL lesson planning, audio transcription, and post-class summary emails.
 
-## Setup
+## 🚀 Features
 
-1. Install dependencies:
+- **Lesson Planning:** Automatically generates QA-checked, level-appropriate lesson plans based on student profiles and Ellii worksheet PDFs.
+- **Canva Integration:** Directly generates Canva presentations from your lesson plans using MCP tools, complete with custom typography rules, and automatically files them into the student's Canva folder.
+- **Local Video Transcription:** Runs local `faster-whisper` transcription on your Mac to convert raw lesson video recordings into text transcripts without expensive cloud API costs.
+- **Agentic Email Drafting:** Uses a specialized sub-agent to draft highly personalized, bilingual post-class summary emails that capture nuanced linguistic corrections and student progress.
+- **Automated Profile Management:** Dynamically creates new student profiles via a short interactive interview, and automatically updates existing profiles with course records after every class.
+
+## 🛠️ Setup
+
+1. Install dependencies for the local transcription tools:
 ```bash
-pip install anthropic rich
+brew install ffmpeg
+pip install faster-whisper anthropic rich
 ```
 
-2. Set your Anthropic API key:
+2. Run Claude Code in the project directory:
 ```bash
-export ANTHROPIC_API_KEY='your-key-here'
+claude
 ```
 
-3. Run the agent:
-```bash
-python main.py
-```
+## 📚 Claude Code Skills (Workflows)
 
-## Usage
+This project relies heavily on custom Claude Code Skills to handle complex, multi-step agentic workflows. Run these directly inside the Claude Code prompt.
 
-### Python CLI
-- `/plan [StudentName]` - Generate a personalized lesson plan
-- `/list` - List all available students
-- `/quit` or `/exit` - Exit the program
+### 📝 Pre-Class: Lesson Prep
+- **`/esl-student <Name>`** - Interactive interview to create a new student profile markdown file.
+- **`/esl-prep <Name> "/path/to/worksheet.pdf"`** - The ultimate prep orchestrator. Reads the student's profile (weaknesses, goals, level), analyzes the PDF worksheet, and generates a tailored lesson plan with exact slide content.
+- **`/esl-plan <Name> "Topic"`** - Generates just the lesson plan and slide content markdown (no Canva integration).
+- **`/esl-canva <Name> plans/<Name>_Lesson.md`** - Reads a saved lesson plan markdown file and uses the Canva MCP to generate a presentation, applying strict styling rules (Century Gothic, bold headers, white background) and filing it in the student's Canva folder.
 
-### Claude Code Skills
+### 🎬 Post-Class: Auto Lesson Summary
+- **`/auto-lesson /path/to/recording.mp4`** - The complete post-class orchestrator.
+  1. Extracts audio and transcribes the lesson locally.
+  2. Passes the transcript to an agentic email writer to draft a highly accurate bilingual summary email.
+  3. Updates the student's profile (`students/*.md`) with the new lesson record and progress notes.
+  4. Automatically opens the generated draft in your local Gmail interface via Chrome with the correct date in the subject line.
+- **`/lesson-summary /path/to/recording.mp4`** - Runs only the local media processor to output a raw `.txt` transcript.
+- **`/lesson-email tmp/transcript.txt`** - Runs only the email writer sub-agent on a raw transcript, referencing the `Master_EmailStyle_Guide.md` and user feedback memories for tone.
 
-- **Full flow:** `/esl-prep Hsuan '/path/to/elli.pdf'`
-  Reads the student profile, generates a QA-checked lesson plan, and creates a Canva presentation filed in the student's folder.
-
-- **Plan only:** `/esl-plan Hsuan "smartwatches"`
-  Generates the lesson plan with exact Canva slide content — no Canva design created.
-
-- **Canva only:** `/esl-canva Hsuan` (after a plan is already in the conversation)
-  Creates a Canva presentation from the slide content and files it in the student's folder.
-
-## Project Structure
+## 📂 Project Structure
 
 ```
 esl-agent/
-├── architecture.md               # Project specification
 ├── README.md                     # This file
-├── main.py                       # CLI interface
-├── agent_logic.py                # LLM interaction logic
-├── data_manager.py               # File I/O handling
-├── students/                     # Student profile storage (Markdown)
-├── prompts/
-│   ├── esl-prep.md               # Orchestrator prompt
-│   ├── esl-plan.md               # Lesson plan generation + QA prompt
-│   └── esl-canva.md              # Canva presentation creation prompt
-└── .claude/skills/
-    ├── esl-prep/SKILL.md         # Orchestrator skill
-    ├── esl-plan/SKILL.md         # Plan generation skill
-    └── esl-canva/SKILL.md        # Canva creation skill
+├── students/                     # Student profile storage (Markdown files e.g., Ariel.md)
+├── plans/                        # Saved generated lesson plans (Markdown files)
+├── templates/                    
+│   └── Master_EmailStyle_Guide.md# Strict rules for email generation tone and format
+├── prompts/                      # Detailed system prompts guiding agent behavior
+│   ├── esl-prep.md               
+│   ├── esl-plan.md               
+│   ├── esl-canva.md              
+│   └── esl-student.md            
+├── tmp/                          # Temporary storage for transcripts and email drafts
+└── .claude/
+    ├── memory/                   # File-based auto memory for user preferences (e.g., feedback_email_style.md)
+    └── skills/                   # Claude Code Skill definitions and sub-agents
+        ├── auto-lesson/          # Post-class orchestrator
+        ├── esl-canva/            # Canva MCP presentation generator
+        ├── esl-plan/             # Lesson plan generator
+        ├── esl-prep/             # Pre-class orchestrator
+        ├── esl-student/          # Profile creator
+        ├── lesson-email/         # Email drafting sub-agent
+        ├── lesson-summary/       # Local transcription runner
+        └── send-email/           # Gmail opening script handler
 ```
 
-## Student Profile Schema
+## 🧑‍🎓 Student Profile Schema
 
-Each student profile (`students/{name}.json`) contains:
-- `name`: Student's name
-- `cefr_level`: CEFR proficiency level (A1, A2, B1, B2, C1, C2)
-- `interests`: List of topics the student is interested in
-- `weaknesses`: List of specific grammar/pronunciation challenges
-- `last_lesson`: Summary of the most recent lesson
-- `goals`: Student's learning objectives
+Each student profile (`students/{name}.md`) follows a strict markdown format:
+- **基本資訊 (Basic Info):** Name, Occupation, CEFR Level, Goals, Focus, Personal Background.
+- **進度摘要 (Progress Summary):** Mastered concepts, ongoing practice, known weaknesses, and suggestions for the *next* lesson.
+- **課程記錄 (Lesson History):** A chronological log (newest to oldest) of past lessons, highlighting what was taught, what the student did well (`好`), and what needs practice (`練習中`).
