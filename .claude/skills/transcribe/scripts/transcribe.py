@@ -172,7 +172,12 @@ print(f'✓ 模型加载完成 ({{load_time:.2f}}秒)')
 
 print('🎙️ 开始转录...')
 transcribe_start = time.time()
-segments, info = model.transcribe('{temp_mp3_path}')
+segments, info = model.transcribe(
+    '{temp_mp3_path}',
+    condition_on_previous_text=False,
+    vad_filter=True,
+    vad_parameters=dict(min_silence_duration_ms=500)
+)
 transcript = ' '.join(segment.text for segment in segments)
 transcribe_time = time.time() - transcribe_start
 

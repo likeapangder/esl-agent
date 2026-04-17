@@ -1,68 +1,115 @@
 # 📝 ESL Lesson Plan: Dreams
 
-**Student:** Ariel
-**Level:** B1
-**Lesson Type:** Article/Topic-Based
-
 ## 🎯 Expected Goals
-1. **Tense Switching Practice:** Seamlessly switch between past tense (describing past dreams) and present tense (discussing general beliefs about dreams).
-2. **Thematic Vocabulary Building:** Expand on her previous "phobias/emotions" topic by learning words related to the mind and sleep (nightmare, vivid, mental).
+1. **Past Tense Consistency:** Practice maintaining past tense when describing previous experiences and vivid dreams.
+2. **Vocabulary Expansion:** Learn and apply vocabulary related to sleep and the mind (e.g., *nightmare*, *mental*, *vivid*) to improve conversational fluency.
 
 ## ⏱️ Pacing & Rhythm (50 mins total)
-* **0-10m (Slides 1-2):** Greeting, Small Talk (open-ended B1 feelings check-in), and reviewing previous corrections.
-* **10-20m (Slide 3):** Topic introduction via Warm-up questions about dreaming habits.
-* **20-35m (Slide 4 & Reading):** Learn key vocabulary, then read and discuss the "Dreams" article.
-* **35-45m (Slide 5 Prep):** Post-reading discussion and guided speaking practice preparing for the homework task.
-* **45-50m:** Wrap-up, feedback, and homework assignment.
+- **0-10m:** Greeting, Small Talk, and reviewing previous corrections.
+- **10-20m (Slide 1):** Topic introduction via Warm-up questions.
+- **20-35m (Slides 2 & 3):** Vocabulary and core material reading/discussion.
+- **35-45m (Slide 4):** Guided speaking practice preparing for the homework task.
+- **45-50m (Slide 5):** Wrap-up, feedback, and homework assignment.
 
 ## 🔑 Customization Strategy
-* **Tense Focus:** Because Ariel struggles with tense stability (e.g., answering `did` questions), the questions deliberately mix present tense ("Do you believe...") and past tense ("Have you ever had... / What happened...") so she can practice switching.
-* **Vocabulary Recycling:** The warm-up includes a follow-up question using the word "anxious" to reinforce her learning from the previous phobia lesson.
-* **Relevance:** Added a warm-up question specifically about her job (teaching/students) to align with her background as a part-time tutor and make the topic relatable.
+Because Ariel struggles with past tense consistency when speaking freely, the warm-up and post-discussion questions are designed to naturally elicit past tense narratives (e.g., "What is the most vivid dream you have ever had?"). Additionally, since her previous lessons focused on emotions and phobias, the topic of "nightmares" and "mental images" provides a natural bridge to recycle that vocabulary (e.g., *anxious*, *fear*).
 
----
+***
 
-## 🖼️ Canva PPT Slide Content
+## 🖼️ Presentation Slide Content
 
 ```markdown
-### Slide 3: Warm-up Questions
+# Slide 1: Warm-up Questions
 
 1. Do you usually remember your dreams when you wake up?
-2. Have you ever had a dream about your tutoring students or your work at the factory?
-3. Do you believe that dreams have special meanings?
+2. Have you ever had a dream about your school or your students?
+3. Do you think our dreams can tell us something about our real life?
 
-[Images for Canva: 1. A person flying in the sky, 2. A person falling, 3. Someone running away / being chased, 4. A person's teeth falling out]
+[Images to insert]
+- A person sleeping peacefully in bed
+- A scary monster or shadow (representing a nightmare)
+- A teacher in a classroom
+- A thought bubble with a question mark
 
-* Which of these common dreams have you had before?
-* Which one sounds like a nightmare to you?
-* Do you usually feel anxious or relaxed after you wake up from a dream?
+Follow-up questions:
+- Which image best describes how you usually sleep?
+- Have you ever had a nightmare like the one in the second picture?
+- Do your students ever tell you about their dreams or bad dreams?
 ```
 
 ```markdown
-### Slide 4: Vocabulary
+# Slide 2: Vocabulary
 
 | Word | Definition |
 | :--- | :--- |
-| **nightmare** | a bad or frightening dream |
-| **breakthrough** | a sudden, important development |
-| **ancient** | from long ago, very old |
-| **mental** | of the mind |
-| **hidden** | out of sight, not easily seen or found |
-| **vivid** | in a clear, detailed way |
-| **REM sleep** | a stage of sleep characterized by rapid eye movements, increased brain activity, and vivid dreams |
-| **deaf** | having difficulty or the inability to hear |
-| **reveal** | to show, to make known |
+| **nightmare** | a bad or scary dream |
+| **breakthrough** | a sudden, important discovery |
+| **ancient** | from a very long time ago |
+| **mental** | about the mind |
+| **hidden** | not easily seen or found |
+| **vivid** | very clear and detailed |
+| **REM sleep** | a deep sleep stage with clear dreams |
+| **deaf** | not able to hear |
+| **reveal** | to show something that was a secret |
 | **solution** | the answer to a problem |
 ```
 
 ```markdown
-### Slide 5: Homework
+# Slide 3: Comprehension Questions
 
-**Are Dreams Important?**
+1. Why does the author mention Albert Einstein and Dmitri Mendeleev?
+A) To show that they were great scientists
+B) To show that dreams can lead to important ideas
+C) To explain how scientists study sleep
+D) To compare scientists to artists
+**Answer: B**
 
-**Task:** Tell me about a memorable dream you had and what you think it means.
+2. What can we conclude from the information in paragraph 2?
+A) People have always believed that dreams have meaning.
+B) Ancient people didn't know what dreams were.
+C) Most people think dreams have no meaning.
+D) Scientists aren't interested in studying dreams.
+**Answer: A**
 
-* When did you have this dream, and what happened in it?
-* How did you feel when you woke up?
-* Do you think this dream was connected to your real life? Why or why not?
+3. What does the word "report" mean in paragraph 3?
+A) To fix a problem
+B) To write a news article
+C) To describe what happened
+D) To forget something
+**Answer: C**
+
+4. Why do nurses often dream about caring for patients?
+A) Because nurses work long hours and are very tired
+B) Because nurses study psychology
+C) Because patients tell them about their dreams
+D) Because dreams often come from real experiences
+**Answer: D**
+
+5. What does psychologist Deirdre Barrett say about dreams?
+A) They reveal our wishes.
+B) They are just mental images and have no meaning.
+C) They can help us find solutions to our problems.
+D) They can help us feel less stressed.
+**Answer: C**
+```
+
+```markdown
+# Slide 4: Post-discussion Questions
+
+1. If you have a problem at work, do you think "sleeping on it" can help you find a **solution**?
+2. What is the most **vivid** dream or **nightmare** you have ever had? 
+3. Some people believe dreams are just **mental** images with no meaning. What is your opinion?
+```
+
+```markdown
+# Slide 5: Homework
+
+**Topic:** A Memorable Dream
+
+**Task:** Record a 1-2 minute audio describing a memorable dream or nightmare you had recently or in the past.
+
+**Guiding Questions & Patterns:**
+- What happened in the dream? *(I dreamed that... / I was...)*
+- How did you feel during the dream? *(I felt anxious/scared/happy...)*
+- Did the dream have any **hidden** meaning? *(I think it means... / It might reveal...)*
 ```

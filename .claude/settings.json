@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(osascript *)"
+    ]
+  },
+  "hooks": {
+    "SubagentStop": [
+      {
+        "matcher": "post-class-processor",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_response.result' | { read -r f; osascript -e 'display notification \"'\"$f\"'\" with title \"Post-Class Processor Finished\"' || true; } 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}
