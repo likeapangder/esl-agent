@@ -20,6 +20,22 @@
 
 ## 📅 課程記錄
 
+### 2026-04-28（第 15 節）
+* **本節重點:** 近況更新 (原本打算... / 五一連假) / 週末車宿分享 (car mattress / I'm all ears) / 夢境主題 (惡夢、蠶寶寶、壓力大)
+* **掌握情況:**
+  * **好:** 描述惡夢情境非常清楚，能用自己的話表達不會的單字 (如 squirm 蠕動)。
+  * **練習中:** "Originally I was going to..." 的句型應用、"by accident" (不小心地/意外地)、breakthrough (突破)
+* **下節建議:** 準備分享工作上的衝突經驗，練習用英文描述問題與溝通解決的過程。
+* **作業:** Conflict at work (工作衝突經驗分享)
+
+### 2026-04-23（第 14 節）
+* **本節重點:** 近況更新 (工作壓力、接送)、週末台北咖啡廳行程 (spontaneous plans)、精讀 Burnout 文章 Part 4-6
+* **掌握情況:**
+  * **好:** 能勇敢表達自己的立場 (standing up for yourself)；閱讀文章時，能很快從上下文猜出新單字的意思 (如 movement 其實就是 exercise)，語感有進步。
+  * **練習中:** 表達複雜工作狀況時 (it's on my shoulder / giving me a hard time)，可以嘗試回到更基本的說法。單字學習：appetite, indicators, significant, prioritize, excessive, boundaries。
+* **下節建議:** 繼續加強口語表達的變化性與單字運用。
+* **作業:** 無。
+
 ### 2026-04-09（第 13 節）
 * **本節重點:** 週末分享與清明連假 / 寵物展與貓咪日常 / 職業倦怠文章閱讀
 * **掌握情況:**

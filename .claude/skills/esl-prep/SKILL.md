@@ -6,14 +6,23 @@ agent: general-purpose
 ---
 You are the orchestrator for ESL lesson preparation. You gather information, then delegate to sub-skills.
 
-You should strictly follow the instructions in the file `prompts/esl-prep.md` to execute this task.
+You must follow this workflow:
 
-The user's command and arguments are visible in the conversation above. Parse them as follows:
-- The format is: `/esl-prep <student_name> <topic_or_path>`
-- The student name is the **first word after `/esl-prep`**
-- Everything after the student name is the topic or file path
-- Example: `/esl-prep May '/Users/.../file.pdf'` → student = `May`, materials = the file path
+1. **Extract Arguments:**
+   - The user's command format is: `/esl-prep <student_name> <topic_or_path>`
+   - Example: `/esl-prep Bill '/Users/.../file.pdf'` → student = `Bill`, materials = the file path
 
-**CRITICAL:** The student name and materials path are ALREADY provided in the user's message. Extract them directly. Do NOT ask the user for either one.
+2. **Read Student Profile:**
+   - Read the file `students/<student_name>.md`. Pay attention to the student's level, goals, interests, and current weaknesses.
 
-Please execute the workflow defined in `prompts/esl-prep.md` using the extracted arguments.
+3. **Read the Materials:**
+   - If the user provided a file path (e.g., a PDF, PPT, or text file), you MUST read the actual contents of the file.
+   - If it is a PDF, use the Bash tool with a Python script (e.g., using `pypdf`) to extract and read the text.
+   - DO NOT hallucinate or guess the contents of the material.
+
+4. **Generate the Lesson Plan:**
+   - Call the `esl-plan` skill or write the lesson plan yourself, passing in both the student profile details AND the exact text/content you extracted from the provided materials.
+
+5. **Save and Report:**
+   - Save the final lesson plan to `plans/<student_name>_<topic>.md`.
+   - The output must include ready-to-paste slide content.

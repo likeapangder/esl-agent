@@ -20,6 +20,14 @@
 
 ## 📅 課程記錄
 
+### 2026-04-24（第 10 節）
+* **本節重點:** 近況更新 (白沙屯行程、區分 county/country)、AI 應用與看法 (turn pictures into comic style、evaluate、manage、express)、AI 在職場中的文章閱讀。
+* **掌握情況:**
+  * **好:** 能努力用已知字彙拼湊解釋不熟悉的詞 (例如描述 AI 影片情緒奇怪、需要人類管理 AI 評估等)，成功表達出自己的想法。
+  * **練習中:** take a walk (散步) vs walk on the streets (走路)、can't (被迫不能) vs don't (選擇不做) 的差異、情緒形容詞發音 (enthusiastic, anxious, hesitant, resistant)。
+* **下節建議:** 繼續加強發音練習，並討論文章後續內容。
+* **作業:** 閱讀文章。
+
 ### 2026-04-10（第 9 節）
 * **本節重點:** 清明連假與掃墓 / 恐懼症名稱 / 恐懼症文章閱讀
 * **掌握情況:**

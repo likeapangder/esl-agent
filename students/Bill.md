@@ -20,6 +20,22 @@
 
 ## 📅 課程記錄
 
+### 2026-04-27（第 4 節）
+* **本節重點:** 近況更新 (How is the new case going?, It is challenging) / 週末活動與過去式 (only went out to eat, ate) / 現在進行式 (am/is/are + V-ing, Yes/No問句) / 5W問句應用
+* **掌握情況:**
+  * **好:** 5W問句能快速根據答案屬性判斷疑問詞、V-ing變化拼寫準確
+  * **練習中:** "still" 的位置與用法、主詞為兩人時的 be 動詞變化
+* **下節建議:** 持續複習現在進行式與 5W 問句的變化
+* **作業:** Review Present Continuous Tense & Wh- Questions (複習現在進行式與 Wh- 問句)
+
+### 2026-04-20（第 3 節）
+* **本節重點:** 日常對話文法修正 (my vs. me) / 比較級與數量詞 (better, much better, many vs. much) / 習慣用語與字尾發音 (-tion, -cian 等) / 復活節文化
+* **掌握情況:**
+  * **好:** 發音規則掌握很快、遇到不懂的單字能試著從前後文推敲意思
+  * **練習中:** "have a habit of..." 與 "I'm used to..." 的差別、"my boss gave me..." 句型
+* **下節建議:** 持續複習字尾發音規則與日常片語
+* **作業:** Review the vocabulary and phonics rules (複習今天學到的單字與發音規則)
+
 ### 2026-04-13（第 2 節）
 * **本節重點:** 情緒表達 / 上下班時間與通勤 / 過去與現在進行式複習
 * **掌握情況:**

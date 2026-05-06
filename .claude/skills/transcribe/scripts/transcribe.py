@@ -156,41 +156,14 @@ def main():
 
         print(f"✓ Audio extracted successfully")
 
-        # Step 2: Transcribe audio to text
+        # Step 2: Transcribe audio to text (with speaker diarization if HF_TOKEN is set)
         print("\n🎙️ STEP 2/2: Transcribing audio to text...")
 
-        # Use faster-whisper directly with Python
-        transcribe_cmd = f'''python3 -c "
-from faster_whisper import WhisperModel
-import time
-
-print('⏳ 加载模型...')
-start_time = time.time()
-model = WhisperModel('{args.model}', device='cpu', compute_type='float32')
-load_time = time.time() - start_time
-print(f'✓ 模型加载完成 ({{load_time:.2f}}秒)')
-
-print('🎙️ 开始转录...')
-transcribe_start = time.time()
-segments, info = model.transcribe(
-    '{temp_mp3_path}',
-    condition_on_previous_text=False,
-    vad_filter=True,
-    vad_parameters=dict(min_silence_duration_ms=500)
-)
-transcript = ' '.join(segment.text for segment in segments)
-transcribe_time = time.time() - transcribe_start
-
-# Save transcript to tmp directory
-with open('{txt_file}', 'w', encoding='utf-8') as f:
-    f.write(transcript)
-
-print(f'✓ 转录完成!')
-print(f'检测到的语言: {{info.language}} (概率: {{info.language_probability:.2f}})')
-print(f'处理时间: {{transcribe_time:.1f}}秒')
-print(f'输出文件: {txt_file}')
-print(f'文件大小: {{len(transcript)}} 字符')
-"'''
+        core_script = Path(__file__).parent / "_transcribe_core.py"
+        transcribe_cmd = (
+            f'python3 "{core_script}" '
+            f'"{temp_mp3_path}" "{txt_file}" "{lesson_date}" "{args.model}"'
+        )
 
         success, transcribe_time = run_command(transcribe_cmd, "Transcribing with faster-whisper", timeout=1800000)
 
@@ -204,10 +177,6 @@ print(f'文件大小: {{len(transcript)}} 字符')
         if not txt_file.exists():
             print(f"❌ Error: Transcript file was not created: {txt_file}")
             sys.exit(1)
-
-        # Prepend lesson date as first line so the /lesson skill can use it
-        transcript_content = txt_file.read_text(encoding='utf-8')
-        txt_file.write_text(f"DATE: {lesson_date}\n\n{transcript_content}", encoding='utf-8')
 
     finally:
         # Clean up temporary MP3 file

@@ -20,6 +20,22 @@
 
 ## 📅 課程記錄
 
+### 2026-04-28（第 9 節）
+* **本節重點:** 近況更新 (breastfeed, decaf, plain vs spicy) / 作業探討 (lunch break, nap time, push the elevator button for strangers) / 職場衝突 (conflict vs argument, argue back, aggressive)。
+* **掌握情況:**
+  * **好:** 努力嘗試用不同的方式表達「強勢」(aggressive)，生動描述學校大隊接力的衝突。
+  * **練習中:** 精確使用休息時間 (lunch break/nap time) 取代 the other time、used to 的用法、釐清 conflict 和 argument 的差異。
+* **下節建議:** 持續運用生活和職場案例練習口語描述，加強精確用詞。
+* **作業:** 無新作業。
+
+### 2026-04-24（第 8 節）
+* **本節重點:** 近況更新 (清明連假去花蓮露營、逛夜市)、Smartwatches 文章討論 (科技帶來的壓力)。
+* **掌握情況:**
+  * **好:** 能主動嘗試用其他英文詞彙解釋不會的字 (例如用 go outside 形容 take a walk)；朗讀長句的流暢度佳。
+  * **練習中:** take a walk (散步) vs walk (走路)、發音 (wristwatch, overwhelmed)。
+* **下節建議:** 下週預計討論 Resolving Work Conflicts。
+* **作業:** 無新作業。
+
 ### 2026-03-28（第 7 節）
 * **本節重點:** 醫療與情境恐懼症
 * **掌握情況:**
